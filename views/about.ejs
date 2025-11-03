@@ -1,0 +1,87 @@
+<%- include('partials/header') %>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us</title>
+</head>
+<body>
+  <section class="about-hero">
+    <div class="hero-content">
+      <h1>Discover, Learn & Grow with Us</h1>
+      <p>
+        We’re passionate about creating a space where knowledge thrives and readers connect.
+      </p>
+      <button id="contactBtn" class="contact-btn">Get in Touch</button>
+    </div>
+<div class="about-video">
+  <h3 class="video-heading">✨ Watch: A Spark to Keep You Growing ✨</h3>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/JhmyNySOx7sembed/JhmyNySOx7s?autoplay=1&mute=1&loop=1&playlist=JhmyNySOx7s"
+    title="Reading Inspiration"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+    allowfullscreen>
+  </iframe>
+</div>
+
+  </section>
+
+  <section class="about-offer">
+    <h2>What We Offer👀</h2>
+    <div class="offer-grid">
+      <div class="offer-item">
+        <img src="https://m.media-amazon.com/images/I/81nH39h%2BHeL._AC_UF894%2C1000_QL80_.jpg" alt="Book library">
+        <h3>Explore Books</h3>
+        <p>
+          Dive into a wide collection of books across genres — from timeless classics to modern reads.
+        </p>
+      </div>
+      <div class="offer-item">
+        <img src="/images/discussion.jpg" alt="Book discussions">
+        <h3>Engage & Discuss</h3>
+        <p>
+          Join conversations with readers worldwide. Share your opinions and discover new perspectives.
+        </p>
+      </div>
+      <div class="offer-item">
+        <img src="/images/review.jpg" alt="Book reviews">
+        <h3>Review & Reflect</h3>
+        <p>
+          Rate and review books that left an impact — help others find their next great read.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="why-reading">
+    <div class="reading-image">
+      <img src="/images/reading-growth.jpg" alt="Why reading matters">
+    </div>
+    <div class="reading-text">
+      <h2>Why Reading Matters</h2>
+      <p>
+        Reading shapes how we think, feel, and see the world. It opens our minds, expands our vocabulary, and strengthens our ability to empathize.  
+      </p>
+      <p>
+        Every book you read adds a new layer to your understanding of life — inspiring you to grow beyond limits and connect deeply with ideas that matter.
+      </p>
+      <p class="quote">
+        “A reader lives a thousand lives before he dies. The man who never reads lives only one.”  
+        <br> — George R.R. Martin
+      </p>
+    </div>
+  </section>
+
+  <script>
+    document.getElementById("contactBtn").addEventListener("click", () => {
+      window.location.href = "/contact";
+    });
+  </script>
+</body>
+</html>
+
+<%- include('partials/footer') %>

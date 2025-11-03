@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Book</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <section class="add-book-section">
+    <h1>Add a New Book</h1>
+    <form action="/books" method="POST" class="add-book-form">
+
+      <label for="title">Book Title</label>
+      <input type="text" id="title" name="title" placeholder="Enter book title" required>
+
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" placeholder="Enter author name" required>
+
+      <label for="coverUrl">Cover Image URL</label>
+      <input type="url" id="coverUrl" name="coverUrl" placeholder="https://example.com/book-cover.jpg">
+
+      <label for="rating">Rating (1–5)</label>
+      <input type="number" id="rating" name="rating" min="1" max="5" required>
+
+      <label for="quote">Favorite Quote</label>
+      <input type="text" id="quote" name="quote" placeholder="Enter a short quote">
+
+      <label for="article">Book Article</label>
+      <textarea id="article" name="article" rows="5" placeholder="Write a short article about the book"></textarea>
+
+      <button type="submit">Add Book</button>
+    </form>
+  </section>
+
+</body>
+</html>

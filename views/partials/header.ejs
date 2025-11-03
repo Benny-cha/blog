@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Blog</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/home.css">
+    <script src="/js/index.js" defer></script>
+
+</head>
+
+<body>
+<header class="header">
+    <a href="/" class="logo">
+        <img src="https://imgs.search.brave.com/22nFkhfyp50mEPPXpuw-y3rMIke33HJmZnKh0wsGVrQ/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi84LzhhL1hv/bm90aWNfaWNvbi5z/dmcvMTIwMHB4LVhv/bm90aWNfaWNvbi5z/dmcucG5n" alt="Big Think Logo" class="logo-img">
+        <span class="logo-text">Big Think.</span>
+    </a>
+
+    <nav class="navbar">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+        <a href="/" class="<%= currentPath === '/' ? 'active' : '' %>">
+        <i class="fa-solid fa-house"></i> Home
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="/books" class="<%= currentPath === '/books' ? 'active' : '' %>">
+        <i class="fa-solid fa-book"></i> Books
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="/about" class="<%= currentPath === '/about' ? 'active' : '' %>">
+        <i class="fa-solid fa-user"></i> About
+        </a>
+    </li>
+
+    <li class="nav-item">
+        <a href="/contact" class="<%= currentPath === '/contact' ? 'active' : '' %>">
+        <i class="fa-solid fa-envelope"></i> Contact
+        </a>
+    </li>
+    </ul>
+    </nav>
+    
+</header>
+</body>
+</html>

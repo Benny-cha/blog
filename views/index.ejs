@@ -1,0 +1,48 @@
+<%- include('partials/header') %>
+
+
+<section class="hero">
+  <div class="hero-content">
+    <h1>Where Knowledge Meets Innovation</h1>
+    <p class="tagline">
+      Discover books, articles, and ideas that fuse human creativity with the power of technology.
+    </p>
+    <a href="/books" class="cta-btn">Explore Our Books</a>
+  </div>
+  <img src="/images/brains.jpg" alt="Innovation" class="hero-image" />
+</section>
+<section class="featured-books">
+  <h2>Featured Books</h2>
+  
+  <div class="book-grid">
+    <% if (books && Array.isArray(books)) { %>
+  <% books.slice(0, 3).forEach(book => { %>
+    <div class="book-card">
+      <img src="<%= book.coverUrl %>" alt="<%= book.title %>" />
+      <h3><%= book.title %></h3>
+      <p class="author">by <%= book.author %></p>
+      <a href="/books/<%= book.id %>" class="view-link">View Article →</a>
+    </div>
+  <% }); %>
+<% } else { %>
+  <p>No books available.</p>
+<% } %>
+
+</section>
+<section class="about">
+  <h2>About Big Think</h2>
+  <p>
+    Big Think is your hub for technology-inspired learning. We explore the intersection of books, 
+    creativity, and human innovation — making complex ideas simple and actionable.
+  </p>
+</section>
+<section class="newsletter">
+  <h2>Join Our Newsletter</h2>
+  <p>Get updates on the latest books, articles, and innovations every week.</p>
+  <form>
+    <input type="email" placeholder="Enter your email" required />
+    <button type="submit">Subscribe</button>
+  </form>
+</section>
+
+<%- include('partials/footer.ejs') %>

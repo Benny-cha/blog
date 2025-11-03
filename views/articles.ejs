@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title><%= book.title %> | Book Article</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+  <section class="article-section">
+    <div class="article-container">
+      <img src="<%= book.coverUrl %>" alt="<%= book.title %> cover" class="article-cover">
+      <h1><%= book.title %></h1>
+      <h3>by <%= book.author %></h3>
+
+      <p><strong>Rating:</strong> 
+        <% for (let i = 0; i < 5; i++) { %>
+          <%= i < book.rating ? "⭐" : "☆" %>
+        <% } %>
+      </p>
+
+      <blockquote>"<%= book.quote %>"</blockquote>
+
+      <div class="article-content">
+        <%- book.article %>
+      </div>
+
+      <a href="/books" class="back-link">← Back to Books</a>
+    </div>
+  </section>
+
+</body>
+</html>
